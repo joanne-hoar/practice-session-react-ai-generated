@@ -1,16 +1,75 @@
-# React + Vite
+# Every Day Market - React Practice Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce application built with React and Vite as part of Module 2 Practice Activities for T0511 FrontEnd Frameworks course.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React Router** - Client-side routing with Home and Products pages
+- **Component Architecture** - Reusable ProductCard components
+- **State Management** - useState hooks for cart counter and product selection
+- **Async Data Loading** - Service layer with Promise-based data fetching
+- **Loading States** - User feedback during data loading with useEffect
+- **Interactive UI** - Product selection with visual feedback and hover effects
+- **Responsive Design** - Grid layout for product display
 
-## React Compiler
+## 📁 Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── components/
+│   ├── common/          # Header component with navigation
+│   └── market/          # ProductCard and ProductList components
+├── pages/               # HomePage and ProductsPage
+├── services/            # productService for data management
+└── App.jsx             # Main app with routing configuration
+```
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 18** - UI library
+- **Vite** - Build tool and dev server
+- **React Router DOM** - Routing
+- **JavaScript (ES6+)** - Programming language
+
+## 🏃 Getting Started
+
+### Install dependencies
+```bash
+npm install
+```
+
+### Run development server
+```bash
+npm run dev
+```
+
+### Build for production
+```bash
+npm run build
+```
+
+### Preview production build
+```bash
+npm run preview
+```
+
+## 📚 Learning Objectives Covered
+
+- ✅ Set up Vite + React development environment
+- ✅ Create reusable functional components
+- ✅ Implement custom event handlers and prop passing
+- ✅ Use useState hook for state management
+- ✅ Apply useEffect hook for side effects
+- ✅ Implement service layer pattern for data management
+- ✅ Use Promises for asynchronous operations
+- ✅ Manage interactive state with visual feedback
+
+## 🎓 Course Information
+
+**Course:** T0511 FrontEnd Frameworks  
+**Module:** 2 - React Fundamentals  
+**Practice Activities:** 1, 2, and 3 completed
+
+---
+
+Built with ❤️ using React + Vite
