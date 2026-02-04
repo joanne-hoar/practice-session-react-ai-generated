@@ -4,11 +4,31 @@
     padding: 1rem;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card.selected {
+    background: lightgray;
+    border: 3px solid gray;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
 }
 
 .product-card h3 {
     margin: 0 0 0.5rem 0;
     color: #333;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem 0;
 }
 
 .add-btn {
@@ -19,6 +39,7 @@
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    width: 100%;
 }
 
 .add-btn:hover {

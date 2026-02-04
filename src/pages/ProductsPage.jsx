@@ -7,6 +7,7 @@ function ProductsPage(){
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [count, setCount] = useState(0);
+    const [selectedId, setSelectedId] = useState(null); // Track selected product
 
     // useEffect to fetch products on first render
     useEffect(() => {
@@ -22,6 +23,13 @@ function ProductsPage(){
         alert(`Add ${product.name} to cart.`);
     }
 
+    function selectProduct(product) {
+        setSelectedId(product.id);
+        console.log(`Selected product: ${product.name}`);
+    }
+
+    const selectedProduct = products.find(p => p.id === selectedId);
+
     // Show loading state while fetching
     if (loading) {
         return (
@@ -35,9 +43,21 @@ function ProductsPage(){
         <div>
             <h2>Our Products</h2>
             <h3>Items in cart: {count}</h3>
+            {selectedProduct && (
+                <div className="selected-product-details">
+                    <h3>{selectedProduct.name}</h3>
+                    <p>{selectedProduct.description}</p>
+                </div>
+            )}
             <div className="products-grid">
                 {products.map(product => (
-                    <ProductCard key={product.id} product={product} onAction={addToCart}/>
+                    <ProductCard 
+                        key={product.id} 
+                        product={product}
+                        onAction={addToCart}
+                        onSelect={selectProduct}
+                        isSelected={product.id === selectedId}
+                    />
                 ))}
             </div>
         </div>

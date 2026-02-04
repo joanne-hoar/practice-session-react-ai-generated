@@ -4,3 +4,22 @@
     gap: 1.5rem;
     padding: 2rem;
 }
+
+.selected-product-details {
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+.selected-product-details h3 {
+    color: #007bff;
+    margin: 0 0 0.5rem 0;
+}
+
+.selected-product-details p {
+    color: #333;
+    margin: 0;
+}
