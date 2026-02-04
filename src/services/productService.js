@@ -33,7 +33,12 @@ const products = [
 
 class ProductService {
   getAllProducts() {
-    return products;
+    // Return Promise with 2-second delay (simulates API call)
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(products);
+      }, 2000);
+    });
   }
 
   getProductById(id) {
