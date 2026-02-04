@@ -2,7 +2,11 @@
 
 A modern e-commerce application built with React and Vite as part of Module 2 Practice Activities for T0511 FrontEnd Frameworks course.
 
-## 🚀 Features
+## � Screenshot
+
+![Every Day Market Application](./public/screenshot.png)
+
+## �🚀 Features
 
 - **React Router** - Client-side routing with Home and Products pages
 - **Component Architecture** - Reusable ProductCard components
